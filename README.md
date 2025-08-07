@@ -1,1 +1,38 @@
-# VOS_analyser
+# VOS_Analyser
+# Automated Network Analysis Report Generator
+
+This project provides a Python-based tool, designed for Google Colab, that automates the process of network analysis and generates a comprehensive, multi-page PDF report. It is specifically tailored to process data exported from VOSviewer, but can be adapted for other network data sources.
+
+## Key Features
+
+-   **Automated Data Processing:** Loads and validates node and edge files via the pandas package.
+-   **Comprehensive Network Analysis:** Calculates multiple centrality metrics (Degree, Betweenness, Closeness, Eigenvector), cluster coherence, influential keyword analysis and temporal trends with the networkx package.
+-   **Dynamic PDF Report Generation:** Uses the `reportlab` library to create a multi-page PDF analysis report with text, tables, and visualisations.
+-   **Interactive Colab UI:** A simple, guided workflow allows users to upload files, trigger the analysis, download the report, and clean up the environment with distinct button clicks.
+-   **Robust Error Handling:** The workflow includes validation checks and automatic cleanup of files upon error to ensure a clean state.
+
+## How to Use
+
+This project is designed to be run as a Google Colab notebook (`.ipynb`).
+
+1.  **Setup:** Open the notebook in Google Colab. The first cell will install the necessary libraries.
+2.  **Configuration:** The second cell contains a `config` dictionary where you can adjust parameters like PDF titles and data column names to match your specific files. The remaining cells configure the analysis and PDF generation functions.
+3.  **Run the Workflow:** Execute the final cell (labelled "EXECUTION"). This will initiate the interactive workflow:
+    a. A file upload dialogue will appear. Select your `_node.csv`, `_edge.csv`, and visualisation (`.png`) files.
+    b. After a successful upload, a **"Start Analysis"** button will appear. Click it to begin processing.
+    c. Once the analysis is complete, a **"Download Report"** button will be displayed. Click it to download the generated PDF.
+    d. After initiating the download, a **"Clean Up Files"** button will become active. Click it to remove all uploaded files and the generated report from the Colab session.
+
+## Technology Stack
+
+-   **Language:** Python 3
+-   **Environment:** Google Colab
+-   **Core Libraries:**
+    -   `pandas` for data manipulation.
+    -   `networkx` for graph analysis.
+    -   `reportlab` for PDF generation.
+    -   `ipywidgets` for the interactive UI in Colab.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
