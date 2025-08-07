@@ -1,15 +1,25 @@
 # VOS_Analyser
 # Automated Network Analysis Report Generator
 
-This project provides a Python-based tool, designed for Google Colab, that automates the process of network analysis and generates a comprehensive, multi-page PDF report. It is specifically tailored to process data exported from VOSviewer, but can be adapted for other network data sources.
+This project provides Python-based tools, designed for Google Colab, that automate the process of bibliometric analyses, specifically network analysis and generate a comprehensive, multi-page PDF report. It is specifically tailored to process data exported from VOSviewer, but can be adapted for other network data sources.
+For now, as a proof of concept, the keyword analyser is implemented and ready to be used in your bibliometric research.
 
 ## Key Features
 
--   **Automated Data Processing:** Loads and validates node and edge files via the pandas package.
+-   **Automated Data Processing:** Loads and validates node and edge CSV files via the pandas package.
 -   **Comprehensive Network Analysis:** Calculates multiple centrality metrics (Degree, Betweenness, Closeness, Eigenvector), cluster coherence, influential keyword analysis and temporal trends with the networkx package.
 -   **Dynamic PDF Report Generation:** Uses the `reportlab` library to create a multi-page PDF analysis report with text, tables, and visualisations.
 -   **Interactive Colab UI:** A simple, guided workflow allows users to upload files, trigger the analysis, download the report, and clean up the environment with distinct button clicks.
--   **Robust Error Handling:** The workflow includes validation checks and automatic cleanup of files upon error to ensure a clean state.
+-   **Error Handling:** The workflow includes validation checks and automatic cleanup of files upon error to ensure a clean state.
+
+## Installation Guide
+
+1.  **Download the Notebook:** Download the `.ipynb` file from this repository to your local computer.
+2.  **Upload to Google Colab:**
+    *   Go to [Google Colab](https://colab.research.google.com/).
+    *   In the welcome pop-up, click on the **"Upload"** tab.
+    *   Drag and drop the `.ipynb` file you just downloaded.
+3.  **Save a Copy:** Once the notebook is open, go to `File > Save a copy in Drive`. This will save a permanent, editable copy to your own Google Drive. You can now close the original and work from your saved version.
 
 ## How to Use
 
