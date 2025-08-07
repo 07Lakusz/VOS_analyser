@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16759348.svg)](https://doi.org/10.5281/zenodo.16759348)
 # VOS_Analyser
 # Automated Network Analysis Report Generator
 
