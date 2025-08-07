@@ -43,6 +43,28 @@ This project is designed to be run as a Google Colab notebook (`.ipynb`).
     -   `reportlab` for PDF generation.
     -   `ipywidgets` for the interactive UI in Colab.
 
+## How to Cite
+
+If you use this software-code in your research, please cite it. This project is archived on Zenodo and has a permanent Digital Object Identifier (DOI).
+
+A `CITATION.cff` file is also included in this repository for easy import into most citation management tools (e.g., Zotero, Mendeley, EndNote).
+
+### APA 7 Style
+
+Juhász, L. P. (2025). VOS_analyser (Version 0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.16759347
+
+### BibTeX
+
+@software{juhasz_2025_16759347,
+  author       = {Juhász, L. P.},
+  title        = {VOS_analyser},
+  version      = {0.1.0},
+  publisher    = {Zenodo},
+  year         = {2025},
+  doi          = {10.5281/zenodo.16759347},
+  url          = {https://doi.org/10.5281/zenodo.16759347}
+}
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
